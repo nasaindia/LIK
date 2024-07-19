@@ -1,0 +1,58 @@
+<html>
+    <title>
+        LIK Trophy | NASA India
+    </title>
+    <head>
+        <link rel="stylesheet" href="try4.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+        <script src="try3.js"></script>
+        
+        <script>
+            window.onload = readFile();
+            window.onload = setTimeout(() => {
+                document.getElementById("cover").style.opacity = "0%";
+                document.getElementById("cover").style.visibility = "hidden";
+                calculate();
+            }, 2000);
+        </script>
+    </head>
+    
+    <body>
+        <div id="cover">
+            <p id="title1">NASA INDIA ARCHIVE MAP<br> <span style="font-size: 75%; font-weight: 700; font-family: 'century gothic';">1990-2023</span></p>
+        </div>
+        <!-- <button onclick="calculate()" style="z-index: 5; position: absolute; right: 0; top: 0;">Click me</button> -->
+        <div id="page1">
+            <img id="backimg" src="back.png" alt="">
+            <p id="page1title">NASA INDIA<br>ARCHIVE MAP</p>
+            <p id="page1cont">The NASA India Archival Map emphasises the importance of preserving heritage structures and promoting local crafts, as well as highlighting the talent and creativity of students of associated colleges of NASA India. Within the time span of 65 years of our existence, students of NASA India have documented heritage structures and local crafts by competing in various competitions and awards such as Louis I. Kahn Trophy, Nari Gandhi Trophy and Unknown Crafts Person Trophy. Its goal is to raise awareness about the importance of cultural heritage preservation and to encourage more young architects to participate in these important initiatives. Users can learn more about the awards and competitions, as well as the history and cultural significance of the structures and crafts featured on the site, by exploring the projects.</p>
+        </div>
+        <img id="image2" style="z-index:3; display:none; opacity: 80%; border: 1px solid #000; position: absolute; left: 100px; top: 105%;"  src="image3.png" alt="India Map" width="900" height="900">
+        <canvas id="myCanvas" style="display: none; position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+        
+        <div id="navigation">
+            <img src="nasa.jpg" alt="Nasa Logo" id="logo">
+            <p id="titles"></p>
+            
+        </div>
+
+        <div id="container"> 
+            <p id="city">city <p id="cityT"></p></p>
+            <p id="college">college <p id="collegeT"></p></p>
+            <p id="yearName">Year</p>
+            <p id="data"></p> <!-- Queur point -->
+            <p id="building">BuildingName</p>
+            <a href="google.com" id="glink" target="_blank">link to file</a>
+            <p id="participant">participants</p>
+            <p id="begin">hover on red dots to explore the history!</p>
+        </div>
+        
+        <div id="footer">
+            <a href="https://www.nasaindia.co/" id="footerlink" target="_blank">visit NASA India's website</a>
+        </div>
+       
+
+        <div id="main"></div>
+    </body>   
+    <script src="try3.js"></script> 
+</html>
